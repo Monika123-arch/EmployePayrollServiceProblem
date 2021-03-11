@@ -6,6 +6,8 @@ import java.util.Arrays;
 
 public class EmployeePayrollServiceTest {
 
+public class EmployeePayRollServiceTest {
+
     @Test
     public void given3EmployeeWhenWrittenToFile_ShouldReturnEmployeeEnteries(){
         EmployeePayRollData[] arrayOfEmps ={
@@ -15,6 +17,10 @@ public class EmployeePayrollServiceTest {
         };
         EmployeePayRollService employeePayRollService;
         employeePayRollService = new EmployeePayRollService(Arrays.asList(arrayOfEmps));
+
         employeePayRollService.writeData(EmployeePayRollService.IOService.FILE_IO);
+
+        employeePayRollService.writeData();
+
     }
 }
