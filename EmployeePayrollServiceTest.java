@@ -4,7 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
+public class EmployeePayrollServiceTest {
+
 public class EmployeePayRollServiceTest {
+
 
     @Test
     public void given3EmployeeWhenWrittenToFile_ShouldReturnEmployeeEnteries(){
